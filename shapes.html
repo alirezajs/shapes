@@ -1,0 +1,146 @@
+<html>
+  <head>
+    <style>
+      .shapes {
+  weith: 100%;
+  padding:20px;
+  display:flex;
+  jusify-content:space-around;
+  flex-wrap:wrap;
+}
+.shapes div{
+  display:block;
+  margin:30px;
+}
+.square5 {
+  height:100px;
+  width:100px;
+  border:solid 1px #430388;
+  background:#8119ef;
+}
+.circle{
+  height:100px;
+  width:100px;
+  border:solid 1px #430388;
+  background:#8119ef;
+  border-radius:100%;
+}
+.rhombus{
+  height:100px;
+  width:100px;
+  border:solid 1px #f00;
+  background:#f00;
+  transform: rotate(45deg);
+}
+.oval{
+  height:100px;
+  width:60px;
+  border:solid 1px #solid;
+  background:blue;
+  border-radius:100%
+}
+.triangle {
+  height:0px;
+  width: 0px;
+  border: 0 transparent solid;
+  border-bottom:100px solid #f00;
+  border-right-width:100px ;
+  border-left-width:100px;
+}
+.arrow {
+  width:150px;
+  height:50px;
+  background:yellow;
+  position:relative;
+}
+.arrow:after{
+    content: '';
+    display: block;
+    width: 0px;
+    height: 0px;
+    border: 0 solid transparent;
+    border-left: 49px solid yellow;
+    border-bottom-width: 40px;
+    border-top-width: 40px;
+    position: absolute;
+    right: -32px;
+    top: -14px;
+}
+
+.scaled-triangle {
+   height:0;
+   width:0;
+   border:0px solid transparent;
+   border-left:solid 50px blue;
+   border-top-width:70px;
+   border-bottom-width:60px;
+   transform: rotate(50deg)
+}
+.cross{
+  width:100px;
+  height:30px;
+  background:green;
+  position:relative;
+  
+}
+.cross:after{
+  content:'';
+  width:30px;
+  height:100px;
+  position:absolute;
+  background:green;
+  top:-37px;
+  left:35px;
+}
+
+.star{
+   height:0;
+   width:0;
+   border:0px solid transparent;
+   border-top:solid 70px yellow;
+   border-right-width:100px;
+   border-left-width:100px;
+   position:relative;
+}
+.star:before{
+   content: '';
+    height: 0;
+    width: 0;
+    border: 0px solid transparent;
+    border-bottom: solid 70px yellow;
+    border-right-width: 100px;
+    border-left-width: 100px;
+    position: absolute;
+    transform: rotate(-109deg);
+    top: -74px;
+    left: -105px;
+}
+.star:after{
+   content: '';
+    height: 0;
+    width: 0;
+    border: 0px solid transparent;
+    border-bottom: solid 70px yellow;
+    border-right-width: 100px;
+    border-left-width: 100px;
+    position: absolute;
+    transform: rotate(324deg);
+    top: -75px;
+    left: -105px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="shapes">
+    <div class="square5"></div>
+    <div class="circle"></div>
+    <div class="rhombus"></div>
+    <div class="oval"></div>
+    <div class="triangle"> </div>
+    <div class="arrow"></div>
+    <div class="scaled-triangle"></div>
+    <div class="cross"></div>
+    <div class="star"></div>
+</div>
+  </body>
+</html>
