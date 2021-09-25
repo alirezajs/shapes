@@ -128,6 +128,44 @@
     top: -75px;
     left: -105px;
 }
+ .crescent{
+  height:100px;
+  width:100px;
+  border-radius:100%;
+  box-shadow:22px 12px 0 green;
+}     
+.hexagon{
+  width: 100px;
+  height: 58px; 
+  background: #60ff0e;
+  position: relative;
+  transform:rotate(30deg)
+}
+
+.hexagon::before {
+  content: "";
+  position: absolute;
+  top: -27.95px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border:0px solid transparent;
+  border-left-width:50px;
+  border-right-width:50px;
+  border-bottom: 29px solid #60ff0e;
+}
+.hexagon::after {
+  content: "";
+  position: absolute;
+  bottom: -27.49px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border:0px solid transparent;
+  border-left-width: 50px;
+  border-right-width: 50px;
+  border-top: 28px solid #60ff0e;
+}
     </style>
   </head>
   <body>
@@ -141,6 +179,8 @@
     <div class="scaled-triangle"></div>
     <div class="cross"></div>
     <div class="star"></div>
+    <div class="crescent"></div>
+    <div class="hexagon"></div>
 </div>
   </body>
 </html>
