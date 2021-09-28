@@ -166,6 +166,57 @@
   border-right-width: 50px;
   border-top: 28px solid #60ff0e;
 }
+      .octagon {
+      width: 100px;
+      height: 100px;
+      background: red;
+      position: relative;
+  }
+ .octagon::before {
+      content: "";
+      width: 42px;
+      height: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-bottom: 29px solid red;
+      border-left: 29px solid #eee;
+      border-right: 29px solid #eee;
+    }
+ .octagon::after {
+      content: "";
+      width: 42px;
+      height: 0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border-top: 29px solid red;
+      border-left: 29px solid #eee;
+      border-right: 29px solid #eee; 
+    }
+  .heart {
+      position: relative;
+      width: 150px;
+      height: 120px;
+    }
+    .heart:before,
+    .heart:after {
+      position: absolute;
+      content: "";
+      left: 68px;
+      top: 0;
+      width: 70px;
+      height: 100px;
+      background: red;
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+    }
+    .heart:after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+    }
     </style>
   </head>
   <body>
@@ -181,6 +232,8 @@
     <div class="star"></div>
     <div class="crescent"></div>
     <div class="hexagon"></div>
+    <div class="octagon"></div>
+    <div class="heart"></div>
 </div>
   </body>
 </html>
